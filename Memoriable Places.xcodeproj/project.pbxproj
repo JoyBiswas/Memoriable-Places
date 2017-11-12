@@ -12,16 +12,20 @@
 		CE8653ED1FB7574200725C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8653EB1FB7574200725C99 /* Main.storyboard */; };
 		CE8653EF1FB7574200725C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8653EE1FB7574200725C99 /* Assets.xcassets */; };
 		CE8653F21FB7574200725C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8653F01FB7574200725C99 /* LaunchScreen.storyboard */; };
+		CE8653FE1FB75C6C00725C99 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8653FD1FB75C6C00725C99 /* PlacesViewController.swift */; };
+		CE8654011FB8982100725C99 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8654001FB8982100725C99 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE8653E41FB7574200725C99 /* Memoriable Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memoriable Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8653E71FB7574200725C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE8653E71FB7574200725C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Memoriable Places/AppDelegate.swift"; sourceTree = "<group>"; };
 		CE8653E91FB7574200725C99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE8653EC1FB7574200725C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE8653EE1FB7574200725C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8653EE1FB7574200725C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Memoriable Places/Assets.xcassets"; sourceTree = "<group>"; };
 		CE8653F11FB7574200725C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE8653F31FB7574200725C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8653F31FB7574200725C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Memoriable Places/Info.plist"; sourceTree = "<group>"; };
+		CE8653FD1FB75C6C00725C99 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		CE8654001FB8982100725C99 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8654011FB8982100725C99 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				CE8653E61FB7574200725C99 /* Memoriable Places */,
 				CE8653E51FB7574200725C99 /* Products */,
+				CE8653FF1FB8982100725C99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +60,56 @@
 		CE8653E61FB7574200725C99 /* Memoriable Places */ = {
 			isa = PBXGroup;
 			children = (
-				CE8653E71FB7574200725C99 /* AppDelegate.swift */,
+				CE8653FC1FB75C0500725C99 /* Supporting-Fiels */,
+				CE8653FB1FB75BF300725C99 /* Model */,
+				CE8653FA1FB75AF400725C99 /* View */,
+				CE8653F91FB75AD800725C99 /* Controller */,
+			);
+			path = "Memoriable Places";
+			sourceTree = "<group>";
+		};
+		CE8653F91FB75AD800725C99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				CE8653E91FB7574200725C99 /* ViewController.swift */,
+				CE8653FD1FB75C6C00725C99 /* PlacesViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CE8653FA1FB75AF400725C99 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				CE8653EB1FB7574200725C99 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE8653FB1FB75BF300725C99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE8653FC1FB75C0500725C99 /* Supporting-Fiels */ = {
+			isa = PBXGroup;
+			children = (
+				CE8653E71FB7574200725C99 /* AppDelegate.swift */,
 				CE8653EE1FB7574200725C99 /* Assets.xcassets */,
 				CE8653F01FB7574200725C99 /* LaunchScreen.storyboard */,
 				CE8653F31FB7574200725C99 /* Info.plist */,
 			);
-			path = "Memoriable Places";
+			name = "Supporting-Fiels";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CE8653FF1FB8982100725C99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8654001FB8982100725C99 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8653FE1FB75C6C00725C99 /* PlacesViewController.swift in Sources */,
 				CE8653EA1FB7574200725C99 /* ViewController.swift in Sources */,
 				CE8653E81FB7574200725C99 /* AppDelegate.swift in Sources */,
 			);
@@ -158,6 +207,7 @@
 				CE8653F11FB7574200725C99 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = "Memoriable Places";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
